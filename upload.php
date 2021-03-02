@@ -2,6 +2,7 @@
 header('Content-Type: application/json; charset=utf-8');
 $response = array();
 try {
+
     // Undefined | Multiple Files | $_FILES Corruption Attack
     // If this request falls under any of them, treat it invalid.
     if (
@@ -57,3 +58,4 @@ try {
     );
     echo json_encode($response);
 }
+?>
